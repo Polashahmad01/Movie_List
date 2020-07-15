@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6rem;
+    background: #8E43FF;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container {
+        background: #7616FF;;
+        max-width: 600px;
+        padding: 1rem 2rem;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 5px;
+
+        h1 {
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        #movie-form {
+            width: 600px;
+            margin: auto;
+
+            div {
+                margin: 0.5rem 0;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    font-size: 1.1rem;
+                    font-weight: 900;
+                }
+
+                input {
+                    width: 90%;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    margin-top: 0.3rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                &:last-child {
+                    margin: 1.5rem 0;
+                }
+
+                .btn {
+                    background: #F96628;
+                    cursor: pointer;
+                    color: #fff;
+                    font-weight: 900;
+                    font-family: 'Raleway', cursive;
+                    font-size: 1.2rem;
+                    padding: 0.4rem 1rem;
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                       background: #8E43FF;
+                       color: #333;
+                    }
+                }
+            }
+        }
+
+        .tble {
+            width: 100%;
+
+            .tble-body {
+                width: 100%;
+                margin: 1rem;
+
+                .tble-row {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

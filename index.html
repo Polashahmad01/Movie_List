@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <title>Movie List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .success,
+        .error {
+            padding: 0.5rem 0;
+            text-align: center;
+            margin: 1rem 0;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="container">
+            <h1>Movie List</h1>
+            <form id="movie-form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="producer">Producer</label>
+                    <input type="text" name="producer" id="producer">
+                </div>
+                <div>
+                    <label for="release">Release</label>
+                    <input type="date" name="release" id="release">
+                </div>
+                <div>
+                    <input class="btn" type="submit" value="Add Movie">
+                </div>
+            </form>
+
+            <table class="tble">
+
+                <head>
+                    <tr>
+                        <th>Name</th>
+                        <th>Producer</th>
+                        <th>Release</th>
+                        <th>Delete</th>
+                    </tr>
+                </head>
+                <tbody class="tble-body">
+                    <!-- <tr class="tble-row">
+                        <td class="tble-data">
+                            hello
+                        </td>
+                        <td class="tble-data">
+                            hello
+                        </td>
+                        <td class="tble-data">
+                            hello
+                        </td>
+                        <td class="tble-data">
+                            hello
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/appes6.js"></script>
+</body>
+
+</html>
